@@ -1,87 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.box{
+
+.box {
     position: relative;
-    
+    width: 100vw;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
-.list{
+
+.list {
     margin-top: 16px;
 }
-.options{
+
+.options {
     background-color: rgba(255, 166, 0, 0.137);
     width: 150px;
     position: absolute;
     right: 180px;
     visibility: hidden;
 }
-#feature:hover .options{
+
+#feature:hover .options {
     visibility: visible;
-    }
-.options a{
+}
+
+.options a {
     padding-top: 20px;
 }
-.list a:hover{
+
+.list a:hover {
     color: rgb(255, 119, 0);
 }
-.list a,.options a{
+
+.list a,
+.options a {
     text-decoration: none;
     font-weight: 800;
     font-size: 1.5rem;
     padding-right: 50px;
 }
-.list :first-child{
+
+.list :first-child {
     color: rgb(255, 119, 0);
 }
-.nav i{
-    position:absolute ;
+
+.nav i {
+    position: absolute;
     right: 80px;
     visibility: hidden;
 }
-header{
+
+header {
     height: 100vh;
     display: flex;
 }
-.left{
+
+.left {
     width: 33%;
     height: 100%;
 }
-.right{
+
+.right {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/slide-02.jpg);
     background-size: cover;
     width: 67%;
-    /*height: 100%;*/             /* ????????????? */
+    /*height: 100%;*/
+    /* ????????????? */
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(https://themewagon.github.io/klassy-cafe/assets/images/top-left-bg.jpg);
-    height: 100%;                   /*?????????????*/
+    height: 100%;
+    /*?????????????*/
     /* padding: 314px; */
 }
-.innnercontent{
+
+.innnercontent {
     height: 20px;
     width: 50px;
-    background-color: #fff;    /* why color not applied?????????*/
+    background-color: #fff;
+    /* why color not applied?????????*/
 }
-.innercontent h1{
+
+.innercontent h1 {
     font-family: cursive;
     font-size: 3rem;
     font-weight: 100;
     color: #fff;
 }
-.innercontent p{
+
+.innercontent p {
     color: #fff;
 }
-.innercontent button{
+
+.innercontent button {
     color: rgb(255, 119, 0);
     background-color: #fff;
     padding: 10px 20px;
@@ -90,11 +112,13 @@ header{
     border-radius: 3px;
     font-weight: 800;
 }
-button:hover{
+
+button:hover {
     opacity: 0.8;
     transition-duration: 1s;
 }
-.about{
+
+.about {
     display: flex;
     padding-bottom: 100px;
     /* height: 800px; */
@@ -103,17 +127,19 @@ button:hover{
     align-items: center;
 }
 
-.menu{
+.menu {
     /* padding: 100px 0 100px 240px; */
     /* height: 800px; */
     background-color: rgba(255, 166, 0, 0.048);
     padding-bottom: 100px;
 }
-.menu .heading{
+
+.menu .heading {
     max-width: 800px;
-    padding: 100px 0 100px 240px; 
+    padding: 100px 0 100px 240px;
 }
-.card{
+
+.card {
     display: flex;
     flex-wrap: wrap;
     /* margin-top: 100px; */
@@ -121,36 +147,50 @@ button:hover{
     width: 100vw;
     /* overflow:hidden; */
 }
-.card1,.card2,.card3,.card4,.card5,.card6{
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
     max-width: 280px;
     height: 400px;
     margin-left: 10px;
     background-size: cover;
     /* padding-left: 30px; */
     position: relative;
-}.card img{
+}
+
+.card img {
     height: 100%;
     width: 100%;
 }
-.card1{
+
+.card1 {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-02.jpg);
 }
-.card2{
+
+.card2 {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
 }
-.card3{
+
+.card3 {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-01.jpg);
 }
-.card4{
+
+.card4 {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-03.jpg);
 }
-.card5{
+
+.card5 {
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
 }
+
 /* .card6{
     background-image: url(https://themewagon.github.io/klassy-cafe/assets/images/menu-item-04.jpg);
 } */
-.cost{
+.cost {
     background-color: rgb(255, 119, 0);
     color: white;
     position: absolute;
@@ -158,7 +198,8 @@ button:hover{
     left: 0px;
     padding: 15px;
 }
-.incard{
+
+.incard {
     background-color: rgb(255, 119, 0);
     color: white;
     position: relative;
@@ -166,97 +207,120 @@ button:hover{
     width: 280px;
     height: 200px;
     top: 93%;
-    transition:all 1s;
+    transition: all 1s;
     /* left: 0px; */
 }
-.crd{
+
+.crd {
     overflow: hidden;
 }
-.incard h3{
+
+.incard h3 {
     font-size: 2rem;
 }
-.crd:hover .incard{
+
+.crd:hover .incard {
     /* top:60%; */
     transform: translateY(-150px);
 }
 
-.aboutLeft{
+.aboutLeft {
     padding-top: 65px;
 }
-.aboutLeft,.aboutRight{
+
+.aboutLeft,
+.aboutRight {
     max-width: 600px;
     padding-left: 50px;
     /* height: 80%; */
     background-color: #fff;
     /* margin-top: 20px; */
-    
+
 }
-.aboutRight img{
+
+.aboutRight img {
     width: 100%;
 }
-.aboutLeft div{
+
+.aboutLeft div {
     margin-top: 20px;
     /* height: 30%; */
 }
-.aboutRight{
+
+.aboutRight {
     margin-bottom: 20px;
 
 }
-.heading span{
+
+.heading span {
     letter-spacing: -1.4px;
     padding-right: 6px;
 }
-.heading{
+
+.heading {
     font-size: 1.5rem;
 }
-.heading h6{
+
+.heading h6 {
     color: rgb(255, 119, 0);
     font-weight: 100;
 }
-.heading h2{
+
+.heading h2 {
     margin-top: 20px;
     width: 80%;
 }
-.aboutLeft p{
+
+.aboutLeft p {
     line-height: 2rem;
     margin-top: 20px;
     font-size: 1.2rem;
 }
-.aboutImages{
+
+.aboutImages {
     display: flex;
     justify-content: space-around;
     /* height: 400px; */
 }
-.aboutImages img{
+
+.aboutImages img {
     width: 100%;
 }
-.img1{
+
+.img1 {
     width: 170px;
     height: 170px;
 }
-.chefs{
+
+.chefs {
     padding-bottom: 100px;
 }
-.chefs h6,#h2{
+
+.chefs h6,
+#h2 {
     max-width: 400px;
 }
-.chefs .heading,.klassyWeek .heading
-{
+
+.chefs .heading,
+.klassyWeek .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 100px;
 }
-.chefsCard{
+
+.chefsCard {
     border: 1.5px solid;
     height: 480px;
-    max-width: 100%; /*390px*/
+    max-width: 100%;
+    /*390px*/
     border-radius: 5px;
     position: relative;
     margin: 20px;
 }
-.chefsbox{
+
+.chefsbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -264,27 +328,32 @@ button:hover{
     max-width: 1350px;
     margin: auto;
 }
-.opacity{
+
+.opacity {
     width: 95%;
     height: 80%;
     /* position: absolute; */
     margin: 10px 0 0 10px;
     background-color: rgb(56, 56, 56);
 }
-.photo{
+
+.photo {
     width: 95%;
     height: 80%;
     position: absolute;
     margin: 10px 0 0 10px;
 }
-.photo img{
+
+.photo img {
     width: 100%;
     height: 100%;
 }
-.photo{
+
+.photo {
     z-index: 1;
 }
-.name{
+
+.name {
     width: 370px;
     height: 100px;
     margin: auto;
@@ -292,30 +361,37 @@ button:hover{
     text-align: center;
     padding-top: 15px;
 }
-.name p{
+
+.name p {
     font-size: 1rem;
-    
+
 }
-.chefsCard:hover .name h6{
+
+.chefsCard:hover .name h6 {
     color: rgb(255, 119, 0);
     transition-duration: .4s;
 }
-.chefsCard:hover .icon div{
+
+.chefsCard:hover .icon div {
     z-index: 2;
 }
-.chefsCard:hover .photo{
+
+.chefsCard:hover .photo {
     opacity: .1;
     transition-duration: .4s;
 }
-.chefsCard:hover{
+
+.chefsCard:hover {
     border: 1.5px solid rgb(255, 119, 0);
     transition-duration: .4s;
 }
-.icon div:hover{
+
+.icon div:hover {
     background-color: rgb(255, 119, 0);
     /* transition-duration: .4s; */
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -323,6 +399,7 @@ button:hover{
     top: 170px;
     left: 65px;
 }
+
 .icon2 {
     display: flex;
     justify-content: center;
@@ -330,12 +407,13 @@ button:hover{
     width: 36%;
     bottom: 40px;
     margin: auto;
-    background-color:  rgb(255, 119, 0);
+    background-color: rgb(255, 119, 0);
     padding: 35px 30px;
     border-radius: 50px;
     font-size: 1.5rem;
 }
-.icon div{
+
+.icon div {
     position: relative;
     background-color: #fff;
     height: 50px;
@@ -344,7 +422,8 @@ button:hover{
     margin-left: 20px;
     border-radius: 50px;
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: center;
     color: white;
@@ -353,49 +432,61 @@ button:hover{
     /* background-size: cover;
     width: 100%; */
 }
-.contact p{
+
+.contact p {
     margin-top: 20px;
     font-size: 1rem;
 }
-.contactRight{
+
+.contactRight {
     /* text-align: center; */
     background-color: #fff;
     color: #000000;
     border-radius: 5px;
 }
-.contactRight>div{
-    margin: 25px 0 ;
+
+.contactRight>div {
+    margin: 25px 0;
 }
-.contactRight h1{
+
+.contactRight h1 {
     margin: 40px;
 }
-.contactRight textarea,.contactRight .button{
+
+.contactRight textarea,
+.contactRight .button {
     width: 81%;
     margin: 0 9%;
     border-radius: 5px;
 }
-.contactRight .button{
+
+.contactRight .button {
     background-color: rgb(255, 119, 0);
     padding: 10px;
     margin-bottom: 60px;
 }
-.contactLeft,.contactRight{
+
+.contactLeft,
+.contactRight {
     width: 38vw;
     margin: 70px 0;
-    
+
     /* height: 70vh; */
 }
-.contactLeft .heading h2{
+
+.contactLeft .heading h2 {
     max-width: 90%;
 }
-.details{
+
+.details {
     display: flex;
     justify-content: space-between;
     width: 89%;
     margin: 80px 0;
 }
 
-.phone,.email{
+.phone,
+.email {
     width: 48%;
     background-color: #fff;
     color: #000000;
@@ -403,14 +494,19 @@ button:hover{
     text-align: center;
     padding-bottom: 30px;
 }
-.phone a,.email a{
+
+.phone a,
+.email a {
     display: block;
     cursor: pointer;
 }
-.phone h1,.email h1{
+
+.phone h1,
+.email h1 {
     margin-bottom: 20px;
 }
-fieldset{
+
+fieldset {
     width: 79%;
     padding: 15px 0 15px 10px;
     margin: 20px 15px 0 0;
@@ -418,33 +514,41 @@ fieldset{
     font-size: 1rem;
     border: 1px solid grey;
 }
-.input{
+
+.input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-fieldset>div{
-    margin-top: 120px ;
+
+fieldset>div {
+    margin-top: 120px;
 }
-fieldset>input ,fieldset>select{
+
+fieldset>input,
+fieldset>select {
     border-style: none;
     text-decoration: none;
     outline: none;
     appearance: none;
     padding-right: 36px;
 }
-select{
+
+select {
     color: grey;
     padding-right: 36px;
 }
-.button,.button button{
+
+.button,
+.button button {
     border: none;
     color: white;
     background-color: rgb(255, 119, 0);
     cursor: pointer;
     font-size: large;
 }
-.klassyList li{
+
+.klassyList li {
     list-style: none;
     background-color: rgba(255, 119, 0, 0.082);
     padding: 20px 40px;
@@ -452,11 +556,13 @@ select{
     margin: 0px 10px;
     cursor: pointer;
 }
-.klassyList{
+
+.klassyList {
     display: flex;
     margin: 70px;
 }
-.klassyWeek{
+
+.klassyWeek {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -464,130 +570,177 @@ select{
     max-width: 100%;
     margin: auto;
 }
-.parent{
+
+.parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.last{
+
+.last {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-.last div:nth-child(2){
+
+.last div:nth-child(2) {
     width: 60%;
     padding-left: 10px;
 }
-.last :nth-child(3){
+
+.last :nth-child(3) {
     background-color: rgb(255, 119, 0);
     height: 80px;
     width: 80px;
     padding: 24px;
 }
-.last div:nth-child(3){
+
+.last div:nth-child(3) {
     margin-top: 5px;
     border-radius: 5px;
 }
-.last img{
+
+.last img {
     border-radius: 7px;
 }
-.div li{
+
+.div li {
     background-color: white;
     padding: 22px 24px;
     border-radius: 50px;
     margin-left: 20px;
     cursor: pointer;
 }
-.div ul{
+
+.div ul {
     display: flex;
     list-style: none;
-} 
-.div p{
+}
+
+.div p {
     color: white;
 }
-footer{
+
+footer {
     background-color: rgb(255, 119, 0);
     display: flex;
     justify-content: space-around;
     padding: 60px 0 50px 0;
 }
-@media (max-width:768px){
-    .list{
+
+@media (max-width:768px) {
+    .list {
         display: none;
     }
-    .menubar i{
+
+    .menubar i {
         visibility: visible;
         margin-top: 16px;
     }
-    .contact{
+
+    .contact {
         display: block;
     }
-    
-    .contactLeft,.contactRight{
+
+    .contactLeft,
+    .contactRight {
         width: 100%;
     }
-}
-@media (max-width:375px){
-    .menubar i{
-        right: 40px;
+
+    .about {
+        display: block;
     }
-    .menu .heading{
-        padding-left: 9px;
+
+    .aboutRight {
+        margin-top: 50px;
     }
-    footer{
+
+    footer {
         flex-wrap: wrap;
     }
-    
 }
-@media (min-width:994px){
-    .list{
+
+@media (max-width:375px) {
+    .menubar i {
+        right: 40px;
+    }
+
+    .menu .heading {
+        padding-left: 9px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width:994px) {
+    .list {
         padding-right: 10px;
     }
 }
-@media (max-width:500px){
-    .left,.right{
+
+@media (max-width:500px) {
+
+    .left,
+    .right {
         width: 100%;
         height: 100%;
     }
-    header{
+
+    header {
         display: block;
     }
-    .parent{
+
+    .parent {
         display: block;
         width: 100%;
     }
-    .crd{
+
+    .crd {
         margin-top: 20px;
     }
-    footer>div{
+
+    footer>div {
         padding-top: 20px;
     }
-    .details{
+
+    .details {
         display: block;
         margin: auto;
     }
-    .phone,.email{
+
+    .phone,
+    .email {
         width: 85%;
         margin: 20% auto;
     }
-    .contactLeft .heading{
+
+    .contactLeft .heading {
         padding: 15px 0 0 15px;
     }
 }
-@media (max-width:1024px){
-    .img1{
+
+@media (max-width:1024px) {
+    .img1 {
         width: 120px;
         height: 120px;
     }
+
     /* .aboutRight{
         width: 200px;
     } */
 }
-@media (max-width:768px){
-    .about{
+
+
+
+/* @media (max-width:768px) {
+    .about {
         display: block;
     }
-    .aboutRight{
+
+    .aboutRight {
         margin-top: 50px;
     }
-}
+} */
